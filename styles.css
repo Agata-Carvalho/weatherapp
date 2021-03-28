@@ -16,6 +16,7 @@ body {
   border-radius: 10px;
   box-shadow: 10px 10px 20px 6px rgba(0, 0, 0, 0.3);
   background: #1a4176;
+  opacity: 95%;
   background: radial-gradient(
     circle farthest-corner at bottom center,
     #1a4176 0%,
