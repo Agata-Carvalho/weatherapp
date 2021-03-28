@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/15178bc7f4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="src/styles.css" />
+    <title>Weather App</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h6>
+        07:00 pm <br />
+        Saturday<br />
+        20 Feb
+      </h6>
+
+      <div class="row">
+        <div class="col offset-4">
+          <img id="cloudy" src="images/cloudy.png" alt="Cloudy" width="350" />
+        </div>
+      </div>
+      <h5>Lisbon</h5>
+      <h1 id="temperature">13º</h1>
+      <p>
+        <span id="humidity"> Humidity: 62% </span>
+        <br />
+        <span id="wind"> Wind: 12-18 Km/h </span>
+      </p>
+      <form id="search">
+        <div class="row g-0">
+          <div class="col-2">
+            <input
+              type="text"
+              id="searchbox"
+              class="form-control"
+              placeholder="Location"
+            />
+          </div>
+          <div class="col">
+            <button
+              type="button"
+              id="okbutton"
+              class="btn btn-outline-secondary btn-me"
+            >
+              Ok
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <button
+              type="button"
+              id="currentcitybtn"
+              class="btn btn-outline-secondary btn-me"
+            >
+              Current city
+            </button>
+          </div>
+        </div>
+      </form>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col" id="weeklyweather">
+            Mon
+            <div id="weathericon">
+              <img src="images/cloudy.png" width="45px" />
+            </div>
+            <div id="weeklytemp">14º<br />12º</div>
+          </div>
+          <div class="col" id="weeklyweather">
+            Tue
+            <div id="weathericon">
+              <img src="images/cloudy-sun.png" width="45px" />
+            </div>
+            <div id="weeklytemp">14º<br />11º</div>
+          </div>
+          <div class="col" id="weeklyweather">
+            Wed
+            <div id="weathericon">
+              <img src="images/sun.png" width="45px" />
+            </div>
+            <div id="weeklytemp">17º<br />13º</div>
+          </div>
+          <div class="col" id="weeklyweather">
+            Thu
+            <div id="weathericon">
+              <img src="images/clouds.png" width="45px" />
+            </div>
+            <div id="weeklytemp">15º<br />12º</div>
+          </div>
+          <div class="col" id="weeklyweather">
+            Fri
+            <div id="weathericon">
+              <img src="images/rain.png" width="45px" />
+            </div>
+            <div id="weeklytemp">12º<br />11º</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>Coded by Rita Carvalho</footer>
+    <script src="src/index.js"></script>
+  </body>
+</html>
