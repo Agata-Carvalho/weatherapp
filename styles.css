@@ -80,7 +80,8 @@ footer {
 footer {
   text-align: center;
   margin-bottom: 20px;
-  color: #102841;
+  color: white;
+  text-shadow: #102841 5px 5px 5px;
 }
 .row {
   padding: 0px;
