@@ -1,7 +1,7 @@
 body {
-  background-repeat: no-repeat;
-  vertical-align: center;
   background-image: url("https://images.squarespace-cdn.com/content/v1/57f29615e4fcb56c1eefece4/1593436663878-RY2TCTE0Q0J3REO794KH/ke17ZwdGBToddI8pDm48kF4XtxOLLR8aR78eMG5-IV97gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0gmXcXvEVFTLbYX9CdVcGe4Tgp4a5zD8fms7Q7be5gX4BAPrsmjIdaV7Yto05FOgVw/The-Moon-and-Me.jpg?format=2500w");
+  background-position: 50% 50%;
+  background-repeat: none;
 }
 
 .container {
@@ -106,7 +106,7 @@ footer {
 }
 
 #weeklyweather {
-  margin-top: 150px;
+  margin-top: 60px;
 }
 
 #weeklyweather,
