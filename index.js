@@ -57,19 +57,16 @@ searchEngine.addEventListener("submit", searchCity);
 
 function getWeather(response) {
   let currentTemp = Math.round(response.data.main.temp);
-
   let wind = Math.round(response.data.wind.speed);
   let humidity = response.data.main.humidity;
-
   let currentCity = document.querySelector("h5");
   let tempElement = document.querySelector("#temperature");
+  let humidityValue = document.querySelector("#humidity");
+  let windValue = document.querySelector("#wind");
+
   currentCity.innerHTML = `${response.data.name}`;
   tempElement.innerHTML = `${currentTemp}º`;
-
-  let humidityValue = document.querySelector("#humidity");
   humidityValue.innerHTML = `Humidity: ${humidity}%`;
-
-  let windValue = document.querySelector("#wind");
   windValue.innerHTML = `Wind: ${wind} Km/h`;
 }
 

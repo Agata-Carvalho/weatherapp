@@ -39,7 +39,8 @@ h1,
 h5,
 h6,
 p,
-form {
+form,
+#unit {
   margin-left: 20px;
 }
 
@@ -47,6 +48,7 @@ h5,
 p,
 h6,
 footer,
+#unit,
 #weeklyweather,
 #weeklytemp {
   font-family: "Poiret One", cursive;
@@ -74,7 +76,8 @@ h6 {
 }
 
 p,
-footer {
+footer,
+#unit {
   font-size: 18px;
 }
 
@@ -89,7 +92,7 @@ footer {
 }
 
 #okbutton,
-#currentcity {
+#currentcitybtn {
   color: rgb(214, 200, 153);
 }
 
