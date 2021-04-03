@@ -40,7 +40,7 @@ h5,
 h6,
 p,
 form,
-#unit {
+.units {
   margin-left: 20px;
 }
 
@@ -48,7 +48,7 @@ h5,
 p,
 h6,
 footer,
-#unit,
+.units,
 #weeklyweather,
 #weeklytemp {
   font-family: "Poiret One", cursive;
@@ -67,6 +67,12 @@ h1 {
   -webkit-background-clip: text;
 }
 
+span small {
+  display: inline-block;
+  font-size: 45px;
+  vertical-align: top;
+}
+
 h5 {
   font-size: 50px;
 }
@@ -77,7 +83,7 @@ h6 {
 
 p,
 footer,
-#unit {
+.units {
   font-size: 18px;
 }
 

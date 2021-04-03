@@ -1,5 +1,5 @@
 function formatdate() {
-  let today = document.querySelector("h6");
+  let today = document.querySelector("#date");
   today.innerHTML = `${day}, ${month} ${date}, ${hour}:${minutes}`;
 }
 
@@ -59,13 +59,13 @@ function getWeather(response) {
   let currentTemp = Math.round(response.data.main.temp);
   let wind = Math.round(response.data.wind.speed);
   let humidity = response.data.main.humidity;
-  let currentCity = document.querySelector("h5");
+  let currentCity = document.querySelector("#city");
   let tempElement = document.querySelector("#temperature");
   let humidityValue = document.querySelector("#humidity");
   let windValue = document.querySelector("#wind");
 
   currentCity.innerHTML = `${response.data.name}`;
-  tempElement.innerHTML = `${currentTemp}º`;
+  tempElement.innerHTML = `${currentTemp}`;
   humidityValue.innerHTML = `Humidity: ${humidity}%`;
   windValue.innerHTML = `Wind: ${wind} Km/h`;
 }
