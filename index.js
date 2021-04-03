@@ -65,7 +65,7 @@ function getWeather(response) {
   let windValue = document.querySelector("#wind");
 
   currentCity.innerHTML = `${response.data.name}`;
-  tempElement.innerHTML = `${currentTemp}`;
+  tempElement.innerHTML = `${currentTemp}º`;
   humidityValue.innerHTML = `Humidity: ${humidity}%`;
   windValue.innerHTML = `Wind: ${wind} Km/h`;
 }
