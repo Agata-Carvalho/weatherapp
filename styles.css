@@ -35,12 +35,11 @@ body {
   color: rgb(214, 200, 153);
 }
 
-h1,
 h5,
 h6,
 p,
 form,
-.units {
+.degrees {
   margin-left: 20px;
 }
 
@@ -54,23 +53,10 @@ footer,
   font-family: "Poiret One", cursive;
 }
 
-h1 {
+.degrees {
   font-size: 120px;
   font-family: "Big Shoulders Inline Display", cursive;
-  background-image: linear-gradient(
-    to right,
-    #ff9a12 5%,
-    #faea00 60%,
-    #b47100 35%
-  );
-  color: transparent;
-  -webkit-background-clip: text;
-}
-
-span small {
-  display: inline-block;
-  font-size: 45px;
-  vertical-align: top;
+  color: #ff9a12;
 }
 
 h5 {
@@ -82,8 +68,7 @@ h6 {
 }
 
 p,
-footer,
-.units {
+footer {
   font-size: 18px;
 }
 
@@ -93,8 +78,44 @@ footer {
   color: white;
   text-shadow: #102841 5px 5px 5px;
 }
+
+ul,
+li {
+  margin: 0 auto;
+  padding: 0px;
+  list-style: none;
+}
+
+li {
+  display: inline;
+}
+
+a {
+  color: #ff9a12;
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+
+a:link {
+  color: #ff9a12;
+}
+
+a:hover {
+  border-bottom: 1px solid;
+}
+
+.units {
+  font-size: 20px;
+}
+
 .row {
   padding: 0px;
+}
+
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 #okbutton,
@@ -108,11 +129,6 @@ footer {
 
 #currentcity {
   width: 140px;
-}
-
-.container-fluid {
-  padding-left: 0px;
-  padding-right: 0px;
 }
 
 #weeklyweather {
