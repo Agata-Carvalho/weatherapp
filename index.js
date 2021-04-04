@@ -64,11 +64,14 @@ function getWeather(response) {
   let tempElement = document.querySelector("#temperature");
   let humidityValue = document.querySelector("#humidity");
   let windValue = document.querySelector("#wind");
+  let iconElement = document.querySelector("#icon");
 
   currentCity.innerHTML = `${response.data.name}`;
   tempElement.innerHTML = `${currentTemp}`;
   humidityValue.innerHTML = `Humidity: ${humidity}%`;
   windValue.innerHTML = `Wind: ${wind} Km/h`;
+  iconElement.setAttribute("src", 
+   `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 }
 
 // Current City
