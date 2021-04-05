@@ -131,6 +131,11 @@ a:hover {
   width: 140px;
 }
 
+#icon {
+  padding-top: 50px;
+}
+
+#city-box,
 #weeklyweather {
   margin-top: 60px;
 }
