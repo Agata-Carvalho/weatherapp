@@ -1,13 +1,14 @@
 body {
   background-image: url("https://images.squarespace-cdn.com/content/v1/57f29615e4fcb56c1eefece4/1593436663878-RY2TCTE0Q0J3REO794KH/ke17ZwdGBToddI8pDm48kF4XtxOLLR8aR78eMG5-IV97gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0gmXcXvEVFTLbYX9CdVcGe4Tgp4a5zD8fms7Q7be5gX4BAPrsmjIdaV7Yto05FOgVw/The-Moon-and-Me.jpg?format=2500w");
-  background-position: 50% 50%;
-  background-repeat: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .container {
   margin-top: 40px;
   margin-bottom: 40px;
-  max-width: 600px;
+  max-width: 800px;
   border: none;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -48,6 +49,9 @@ p,
 h6,
 footer,
 .units,
+#okbutton,
+#currentcitybtn,
+#searchbox,
 #weeklyweather,
 #weeklytemp {
   font-family: "Poiret One", cursive;
@@ -61,15 +65,19 @@ footer,
 
 h5 {
   font-size: 50px;
+  font-weight: 400;
 }
 
 h6 {
   margin-bottom: 0px;
 }
 
+h6,
 p,
-footer {
-  font-size: 18px;
+footer,
+#weeklyweather,
+#weeklytemp {
+  font-size: 25px;
 }
 
 footer {
@@ -106,7 +114,7 @@ a:hover {
 }
 
 .units {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .row {
@@ -118,17 +126,22 @@ a:hover {
   padding-right: 0px;
 }
 
-#okbutton,
 #currentcitybtn {
   color: rgb(214, 200, 153);
+  font-size: 22px;
+  font-weight: 550;
+  border: thin solid rgb(214, 200, 153);
+  width: 185px;
 }
 
+#okbutton,
 #searchbox {
+  color: rgb(214, 200, 153);
+  font-size: 22px;
+  font-weight: 550;
   margin-bottom: 20px;
-}
-
-#currentcity {
-  width: 140px;
+  margin-top: 20px;
+  border: thin solid rgb(214, 200, 153);
 }
 
 #icon {
