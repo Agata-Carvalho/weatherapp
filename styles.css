@@ -64,7 +64,7 @@ footer,
 }
 
 h5 {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 400;
 }
 
@@ -77,7 +77,7 @@ p,
 footer,
 #weeklyweather,
 #weeklytemp {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 footer {
@@ -114,7 +114,7 @@ a:hover {
 }
 
 .units {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .row {
