@@ -35,6 +35,7 @@
       <div class="row" id="city-box">
         <div class="col">
           <h5 id="city">Lisbon</h5>
+
           <ul>
             <li id="temperature" class="degrees">15</li>
             <li id="unitMetric" class="units">
@@ -42,6 +43,7 @@
               <a href="#" id="Fahrenheit-link" class="active2"> °F</a>
             </li>
           </ul>
+
           <p>
             <span id="humidity"> Humidity: 62% </span>
             <br />
@@ -55,8 +57,8 @@
       </div>
 
       <form id="search">
-        <div class="row g-0">
-          <div class="col-2">
+        <div class="row">
+          <div class="col">
             <input
               type="text"
               id="searchbox"
@@ -64,6 +66,7 @@
               placeholder="Location"
             />
           </div>
+
           <div class="col">
             <button
               type="button"
@@ -73,8 +76,7 @@
               Ok
             </button>
           </div>
-        </div>
-        <div class="row">
+
           <div class="col">
             <button
               type="button"
@@ -86,51 +88,32 @@
           </div>
         </div>
       </form>
-      <div class="container-fluid">
+
+      <div class="weather-forecast">
         <div class="row">
-          <div class="col" id="weeklyweather">
-            Mon
-            <div id="weathericon">
-              <img src="images/cloudy.png" width="45px" />
+          <div class="col-2">
+            <div class="weather-forecast-date">Mon</div>
+            <img
+              class="weather-forecast-icon"
+              src="http://openweathermap.org/img/wn/50d@2x.png"
+              alt=""
+              width="45"
+            />
+            <div class="weather-forecast-temperatures">
+              <span class="weather-forecast-temperature-max"> 18° </span>
+              <span class="weather-forecast-temperature-min"> 12° </span>
             </div>
-            <div id="weeklytemp">14º<br />12º</div>
-          </div>
-          <div class="col" id="weeklyweather">
-            Tue
-            <div id="weathericon">
-              <img src="images/cloudy-day.png" width="45px" />
-            </div>
-            <div id="weeklytemp">14º<br />11º</div>
-          </div>
-          <div class="col" id="weeklyweather">
-            Wed
-            <div id="weathericon">
-              <img src="images/sun.png" width="45px" />
-            </div>
-            <div id="weeklytemp">17º<br />13º</div>
-          </div>
-          <div class="col" id="weeklyweather">
-            Thu
-            <div id="weathericon">
-              <img src="images/cloudygold.png" width="45px" />
-            </div>
-            <div id="weeklytemp">15º<br />12º</div>
-          </div>
-          <div class="col" id="weeklyweather">
-            Fri
-            <div id="weathericon">
-              <img src="images/rainnn.png" width="45px" />
-            </div>
-            <div id="weeklytemp">12º<br />11º</div>
           </div>
         </div>
       </div>
     </div>
+
     <footer>
       Coded by Rita Carvalho open-sourced on
       <a href="https://github.com/Agata-Carvalho/weatherapp"> GitHub</a> and
       hosted on <a href="https://eloquent-benz-c99d0c.netlify.app/">Netlify</a>
     </footer>
+
     <script src="index.js"></script>
   </body>
 </html>
