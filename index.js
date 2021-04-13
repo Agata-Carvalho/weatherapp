@@ -37,6 +37,50 @@ let minutes = now.getMinutes();
 
 formatdate();
 
+//ForecastWeather
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  forecastHTML=
+  forecastHTML+
+  `
+       <div class="col-2">
+          <div class="weather-forecast-date">Mon</div>
+          <img
+            src="http://openweathermap.org/img/wn/50d@2x.png"
+            alt=""
+            width="45"
+          />
+          <div class="weather-forecast-temperatures">
+            <span class="weather-forecast-temperature-max"> 18° </span>
+            <span class="weather-forecast-temperature-min"> 12° </span>
+          </div>
+        </div>
+  `;
+
+  forecastHTML=
+  forecastHTML+
+  `
+       <div class="col-2">
+          <div class="weather-forecast-date">Mon</div>
+          <img
+            src="http://openweathermap.org/img/wn/50d@2x.png"
+            alt=""
+            width="45"
+          />
+          <div class="weather-forecast-temperatures">
+            <span class="weather-forecast-temperature-max"> 18° </span>
+            <span class="weather-forecast-temperature-min"> 12° </span>
+          </div>
+        </div>
+  `;
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML =forecastHTML;
+}
+
 // Location // Search box
 
 function searchCity(event) {
@@ -65,6 +109,7 @@ function getWeather(response) {
   let humidityValue = document.querySelector("#humidity");
   let windValue = document.querySelector("#wind");
   let iconElement = document.querySelector("#icon");
+
 
   currentCity.innerHTML = `${response.data.name}`;
   tempElement.innerHTML = `${currentTemp}`;
@@ -109,6 +154,8 @@ function displayCelsiusTemperature(event) {
 }
 
 let celsiusTemperature = null;
+
+  displayForecast();
 
 let fahrenheitLink = document.querySelector("#Fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
