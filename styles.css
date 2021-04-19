@@ -44,8 +44,8 @@ footer,
 .weather-forecast-date,
 .weather-forecast-temperatures,
 #okbutton,
-#currentcitybtn,
-#searchbox {
+#current-btn,
+#search-city {
   font-family: "Poiret One", cursive;
 }
 
@@ -120,14 +120,14 @@ a:hover {
   padding-right: 0px;
 }
 
-#searchbox,
-#currentcitybtn {
+#search-city,
+#current-btn {
   width: 185px;
 }
 
-#currentcitybtn,
 #okbutton,
-#searchbox {
+#current-btn,
+#search-city {
   text-align: center;
   color: rgb(214, 200, 153);
   font-size: 22px;
