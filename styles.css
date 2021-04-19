@@ -116,8 +116,9 @@ a:hover {
 }
 
 .weather-forecast {
-  padding-left: 0px;
-  padding-right: 0px;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 #search-city,
@@ -137,9 +138,13 @@ a:hover {
   border: thin solid rgb(214, 200, 153);
 }
 
+.icon {
+  text-align: center;
+}
+
 #icon {
-  padding-top: 25px;
-  padding-right: 20px;
+  margin-top: 50px;
+  margin-left: 60px;
 }
 
 #search {
@@ -150,9 +155,6 @@ a:hover {
 #city-box,
 .weather-forecast-date {
   margin-top: 60px;
-}
-
-.weather-forecast {
   text-align: center;
 }
 
